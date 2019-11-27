@@ -1,0 +1,50 @@
+
+	<div id="backdrop">
+
+		<div id="dollarBorder"></div>
+
+		<div id="gemDescript" class="flexCenterBoth">
+			<div id="imgPad" class="flexCenterBoth">
+				<div id="imgBack" class="flexCenterBoth">
+					<img id="gemImage" src="./image/gemSparkle.png" alt="A gem"/>
+				</div>
+			</div>
+			<div id="descriptPad">
+				<div id="descriptG" class="descriptText">Global</div>
+				<div id="descriptE" class="descriptText">Equity</div>
+				<div id="descriptM" class="descriptText">Momentum</div>
+			</div>
+		</div>
+	
+		<div id="schemeDescript">
+			<div>Global Eqity Momentum is an investing scheme that compares three investment classes choosing the one that has done the best, has the most momentum, during the last twelve months.  With a monthly revaluation, it tends to spot the potential downturn early.</div>
+			<div>The three asset classes are US equity, world equity ex US, and three month Treasury Bills.</div>
+			<div id="updateNotice">The latest month this  covers is X.</div>
+		</div>
+
+		<div class="outcome">
+			<div id="member">US Equity</div>
+			<div>Was the best preforming asset class by posting a XX% return for the previous 12 months.</div>
+			<div>It has been the best performer for the last X months.</div>
+		</div>
+
+		<div class="outcome">
+			<div id="member">World Equity ex US</div>
+			<div>Trailed the best preforming asset class by posting a XX% return for the previous 12 months.</div>
+			<div>It has been in second place for the last X months.</div>
+		</div>
+
+		<div class="outcome">
+			<div id="member">Three Month Treasury Bills</div>
+			<div>As been the least preforming asset class by posting a XX% return for the previous 12 months.</div>
+			<div>It has been in this spot for the last X months.</div>
+		</div>
+
+		<form id="toChart" action="/chartPage" method="GET">
+			<div id="buttonInfo">Click the dollar for more data on how the theory perfomed in the past.</div>
+			<input type="image" id="chartButton" src="./image/dollarBill.png" alt="Dollar bill button.">
+		</form>
+
+		<div id="bottomLine"></div>
+
+	</div>
