@@ -99,7 +99,7 @@ html, body {
 }
 
 #updateNotice {
-	margin: 2rem 0;
+	margin-top: 3rem;
 	font-family: numTwo;
 	font-weight: 600;
 }

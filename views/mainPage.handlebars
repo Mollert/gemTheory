@@ -19,25 +19,23 @@
 		<div id="schemeDescript">
 			<div>Global Eqity Momentum is an investing scheme that compares three investment classes choosing the one that has done the best, has the most momentum, during the last twelve months.  With a monthly revaluation, it tends to spot the potential downturn early.</div>
 			<div>The three asset classes are US equity, world equity ex US, and three month Treasury Bills.</div>
-			<div id="updateNotice">The latest month this  covers is X.</div>
+			<div id="updateNotice">The latest month this covers is {{correctMonth}}.</div>
 		</div>
 
 		<div class="outcome">
-			<div id="member">US Equity</div>
-			<div>Was the best preforming asset class by posting a XX% return for the previous 12 months.</div>
-			<div>It has been the best performer for the last X months.</div>
+			<div id="member">{{lastYearResults.first}}</div>
+			<div>Was the best preforming asset class by posting a {{lastYearResults.firstPercentage}}% return for the previous 12 months.</div>
+			<div>It has been the best performer for the last {{lastYearResults.monthsFirst}} month{{lastYearResults.plural}}.</div>
 		</div>
 
 		<div class="outcome">
-			<div id="member">World Equity ex US</div>
-			<div>Trailed the best preforming asset class by posting a XX% return for the previous 12 months.</div>
-			<div>It has been in second place for the last X months.</div>
+			<div id="member">{{lastYearResults.second}}</div>
+			<div>Trailed the best preforming asset class by posting a {{lastYearResults.secondPercentage}}% return for the previous 12 months.</div>
 		</div>
 
 		<div class="outcome">
-			<div id="member">Three Month Treasury Bills</div>
-			<div>As been the least preforming asset class by posting a XX% return for the previous 12 months.</div>
-			<div>It has been in this spot for the last X months.</div>
+			<div id="member">{{lastYearResults.third}}</div>
+			<div>As been the least preforming asset class by posting a {{lastYearResults.thirdPercentage}}% return for the previous 12 months.</div>
 		</div>
 
 		<form id="toChart" action="/chartPage" method="GET">
