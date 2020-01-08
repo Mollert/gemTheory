@@ -1,0 +1,75 @@
+
+/* whenToBillsPage  */
+
+#whenToHeight {
+	height: 90rem;	
+}
+
+.explaination {
+	margin-top: 4rem;
+	font-family: numTwo;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.dataGroup {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;		
+}
+
+.eachYear {
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.eachData {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.theYear {
+	font-size: 1.6rem;
+}
+
+.theData {
+	padding: 0.2rem 0 0 2rem;
+	font-size: 1.4rem;
+}
+
+.return {
+	font-family: numTwoB;	
+}
+
+.getHome {
+	margin-top: 3rem;	
+	font-family: numTwo;
+	font-size: 1.6rem;
+	text-align: center;
+}
+
+
+/* afterBillsPage  */
+
+#afterHeight {
+	height: 60rem;	
+}
+
+#missedGroup {
+	margin-top: 1rem;
+}
+
+.while {
+	padding: 0.4rem 0;
+	font-size: 1.4rem;	
+}
+
+#avR {
+	margin-top: 2rem;
+	font-family: numTwo;
+	font-size: 1.6rem;
+	text-align: center;
+}

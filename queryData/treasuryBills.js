@@ -1,6 +1,11 @@
 
 const treasuryBills = [
 	{
+		date: 201912,
+		threeMonth: 1.55,
+		sixMonth: 1.60,
+		oneYear: 1.59
+	},{
 		date: 201911,
 		threeMonth: 1.59,
 		sixMonth: 1.63,
@@ -2095,14 +2100,19 @@ const treasuryBills = [
 		threeMonth: 8.33,
 		sixMonth: 8.61,
 		oneYear: 9.09
+	},{
+		date: 198412,
+		threeMonth: 8.12,
+		sixMonth: 8.64,
+		oneYear: 9.22
 	}
 ];
 
 // date is at the end of the month
 
-// FRED 3 month treasury constant maturity rate (DGS3MO)
-// FRED 6 month treasury constant maturity rate (DGS6MO)
-// FRED 1 year treasury constant maturity rate (DGS1)
+// FRED 3 month treasury constant maturity rate (DGS3MO); monthly, end of period
+// FRED 6 month treasury constant maturity rate (DGS6MO); monthly, end of period
+// FRED 1 year treasury constant maturity rate (DGS1); monthly, end of period
 
 
 module.exports = treasuryBills;

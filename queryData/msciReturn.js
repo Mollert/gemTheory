@@ -1,6 +1,12 @@
 
 const msciReturn = [
 	{
+		date: 201912,
+		return: 287.69
+	},{
+		date: 201911,
+		return: 287.69
+	},{
 		date: 201910,
 		return: 287.69
 	},{

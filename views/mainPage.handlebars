@@ -1,7 +1,7 @@
 
-	<div id="backdrop">
+	<div id="mainHeight" class="backdrop">
 
-		<div id="dollarBorder"></div>
+		<div class="dollarBorder"></div>
 
 		<div id="gemDescript" class="flexCenterBoth">
 			<div id="imgPad" class="flexCenterBoth">
@@ -17,8 +17,8 @@
 		</div>
 	
 		<div id="schemeDescript">
-			<div>Global Eqity Momentum is an investing scheme that compares three investment classes choosing the one that has done the best, has the most momentum, during the last twelve months.  With a monthly revaluation, it tends to spot the potential downturn early.</div>
-			<div>The three asset classes are US equity, world equity ex US, and three month Treasury Bills.</div>
+			<div>Global Equity Momentum is an investing scheme that compares three investment classes choosing the one that has done the best, has the most momentum, during the last twelve months.  With a monthly revaluation, it tends to spot the potential downturn early.</div>
+			<div>The three asset classes are US equity, world equity ex US, and a bond index.</div>
 			<div id="updateNotice">The latest month this covers is {{correctMonth}}.</div>
 		</div>
 
@@ -38,9 +38,14 @@
 			<div>As been the least preforming asset class by posting a {{lastYearResults.thirdPercentage}}% return for the previous 12 months.</div>
 		</div>
 
-		<form id="toChart" action="/chartPage" method="GET">
-			<div id="buttonInfo">Click the dollar for more data on how the theory perfomed in the past.</div>
-			<input type="image" id="chartButton" src="./image/dollarBill.png" alt="Dollar bill button.">
+		<form class="toPage" action="/whenToBills" method="GET">
+			<div class="buttonInfo">A click of this dollar will show you the months the theory suggested going to Treasury Bills.</div>
+			<input type="image" class="toButton" src="./image/dollarBill.png" alt="Dollar bill button.">
+		</form>
+
+		<form class="toPage" action="/afterBills" method="GET">
+			<div class="buttonInfo">A click of this dollar will show you the months after the theory suggested going to Treasury Bills.</div>
+			<input type="image" class="toButton" src="./image/dollarBill.png" alt="Dollar bill button.">
 		</form>
 
 		<div id="bottomLine"></div>

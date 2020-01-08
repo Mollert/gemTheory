@@ -4,14 +4,19 @@ const request = require("request");
 const router = express.Router();
 
 
+let spPrice = require("../queryData/spPrice.js");
+
 let assetClasses = require("../public/javascript/selectAssetClass.js");
 let lastYearResults = assetClasses.lastYearResults;
+
+let dateData = require("../public/javascript/refineDate.js");
+let splitDate = dateData.divideDate;
+let dateArray = splitDate(spPrice[0].date);
+let correctMonth = dateArray[1] + " " + dateArray[0];
 
 
 router.get("/", (req, res) => {
 
-// Site is updated to this month
-	let correctMonth = "November 2019";
 
 	res.render("mainPage", { correctMonth, lastYearResults });
 });

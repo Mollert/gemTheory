@@ -1,0 +1,110 @@
+
+let spPrice = require("../../queryData/spPrice.js");
+let acwxPrice = require("../../queryData/acwxPrice.js");
+let aggPrice = require("../../queryData/aggPrice.js");
+
+let dateData = require("../../public/javascript/refineDate.js");
+let splitDate = dateData.divideDate;
+
+
+let spRtn = 0;
+let acwxRtn = 0;
+let aggRtn = 0;
+let allDates = [];
+let aYear = "";
+let aMonth = "";
+let aggResults = [];
+let resultsEntries = 0;
+let dataEntries = 0;
+
+
+//for ( let i = 0 ; i < (spPrice.length-12) ; i++ ) {
+for ( let i = 0 ; i < 129 ; i++ ) {
+
+	spRtn = 0;
+	acwxRtn = 0;
+	aggRtn = 0;
+
+	spRtn = ((spPrice[i].price - spPrice[i+12].price) / spPrice[i+12].price) * 100;
+	acwxRtn = ((acwxPrice[i].price - acwxPrice[i+12].price) / acwxPrice[i+12].price) * 100;
+	aggRtn = ((aggPrice[i].price - aggPrice[i+12].price) / aggPrice[i+12].price) * 100;
+
+	
+	if (aggRtn > spRtn && aggRtn > acwxRtn) {
+		spRtn = spRtn.toFixed(1);
+		acwxRtn = acwxRtn.toFixed(1);
+		aggRtn = aggRtn.toFixed(1);		
+//		aggResults.push("For " + separateDate(spPrice[i].date) + ", bonds did " + aggRtn + "% while the S&P did " + spRtn + "% and the world did " + acwxRtn + "%.");
+
+		allDates.push(spPrice[i].date);
+
+		aYear = splitDate(spPrice[i].date)[0];
+		aMonth = splitDate(spPrice[i].date)[1];
+
+//		console.log(aYear + " " + aMonth);
+
+		if (aggResults.length === 0) {
+			aggResults[0] = {year: aYear, data: []};		
+			aggResults[0].data[0] = {month: aMonth, bReturn: aggRtn, spReturn: spRtn, wReturn: acwxRtn};
+
+//			console.log(aggResults);
+
+		} else {
+			resultsEntries = aggResults.length;
+
+//			console.log(resultsEntries);
+
+			if (aggResults[resultsEntries-1].year === aYear) {
+				dataEntries = (aggResults[resultsEntries-1].data).length;
+				aggResults[resultsEntries-1].data[dataEntries] = {month: aMonth, bReturn: aggRtn, spReturn: spRtn, wReturn: acwxRtn};
+
+//				console.log(aggResults);
+
+			} else {
+				aggResults[resultsEntries] = {year: aYear, data: []};		
+				aggResults[resultsEntries].data[0] = {month: aMonth, bReturn: aggRtn, spReturn: spRtn, wReturn: acwxRtn};				
+			}
+		}
+	}
+}
+
+//console.log(aggResults);
+
+//console.log(separateDate(spPrice[110].date));
+/*
+let treasuryResults = [
+	{
+		year: 2001,
+		data: [
+			{
+			month: "May",
+			bReturn: 3.4,
+			spReturn: -11.7,
+			wReturn: -9.5
+			}
+		]
+	},{
+		year: 1992,
+		data: [
+			{
+			month: "October",
+			bReturn: 6.8,
+			spReturn: -4.2,
+			wReturn: 1.2
+			}
+			,{
+			month: "June",
+			bReturn: 10.2,
+			spReturn: 3.9,
+			wReturn: -4.7	
+			}
+		]
+	}
+];
+*/
+//console.log(treasuryResults[0].data[0].month);
+//console.log(treasuryResults[1].year);
+//console.log(treasuryResults[1].data[1].spReturn);
+
+
+module.exports = { aggResults, allDates };

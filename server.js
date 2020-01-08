@@ -4,7 +4,7 @@ const request = require("request");
 const exphbs = require("express-handlebars");
 const path = require("path");
 const bodyParser = require("body-parser");
-const chartjs = require("chart.js");
+
 
 const app = express();
 const router = express.Router();
@@ -19,9 +19,11 @@ app.set("view engine", "handlebars");
 app.set("views", path.join(__dirname ,"views"));
 
 const mainPage = require("./controllers/mainPageRoute.js");
-const chartPage = require("./controllers/chartPageRoute.js");
+const whenToBillsPage = require("./controllers/whenToBillsRoute.js");
+const afterBillsPage = require("./controllers/afterBillsRoute.js");
 
 app.use("/", mainPage);
-app.use("/chartPage", chartPage);
+app.use("/whenToBills", whenToBillsPage);
+app.use("/afterBills", afterBillsPage);
 
 app.listen(port, () => console.log(`Tuned In and Turned On to port ${port}`));
