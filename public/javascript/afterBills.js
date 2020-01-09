@@ -34,7 +34,7 @@ for ( let i = 0 ; i < treasuryDates.length ; i++ ) {
 			spFuture = ((spPrice[j+1].price - spPrice[j+13].price) / spPrice[j+13].price) * 100;
 
 			averageTimes++;
-			averageReturn = (averageReturn + spFuture) / averageTimes;
+			averageReturn = averageReturn + spFuture;
 
 			spFuture = spFuture.toFixed(1);
 		}
@@ -48,11 +48,12 @@ for ( let i = 0 ; i < treasuryDates.length ; i++ ) {
 			nextMonth = monthsList[monthNum];
 		}
 
-
 		listOfMissed[i] = {year: missedYear, month: missedMonth, plusMonth: nextMonth, return: spFuture};	
 	}
 }
 
+averageReturn = averageReturn / averageTimes;
 averageReturn = averageReturn.toFixed(1);
+
 
 module.exports = { listOfMissed, averageReturn };
