@@ -1,6 +1,6 @@
 
 let spPrice = require("../../queryData/spPrice.js");
-let acwxPrice = require("../../queryData/acwxPrice.js");
+let msciExUSA = require("../../queryData/msciExUSA.js");
 let aggPrice = require("../../queryData/aggPrice.js");
 
 let dateData = require("../../public/javascript/refineDate.js");
@@ -8,7 +8,7 @@ let splitDate = dateData.divideDate;
 
 
 let spRtn = 0;
-let acwxRtn = 0;
+let msciRtn = 0;
 let aggRtn = 0;
 let allDates = [];
 let aYear = "";
@@ -19,22 +19,22 @@ let dataEntries = 0;
 
 
 //for ( let i = 0 ; i < (spPrice.length-12) ; i++ ) {
-for ( let i = 0 ; i < 129 ; i++ ) {
+for ( let i = 0 ; i < 182 ; i++ ) {
 
 	spRtn = 0;
-	acwxRtn = 0;
+	msciRtn = 0;
 	aggRtn = 0;
 
 	spRtn = ((spPrice[i].price - spPrice[i+12].price) / spPrice[i+12].price) * 100;
-	acwxRtn = ((acwxPrice[i].price - acwxPrice[i+12].price) / acwxPrice[i+12].price) * 100;
+	msciRtn = ((msciExUSA[i].price - msciExUSA[i+12].price) / msciExUSA[i+12].price) * 100;
 	aggRtn = ((aggPrice[i].price - aggPrice[i+12].price) / aggPrice[i+12].price) * 100;
 
 	
-	if (aggRtn > spRtn && aggRtn > acwxRtn) {
+	if (aggRtn > spRtn && aggRtn > msciRtn) {
 		spRtn = spRtn.toFixed(1);
-		acwxRtn = acwxRtn.toFixed(1);
+		msciRtn = msciRtn.toFixed(1);
 		aggRtn = aggRtn.toFixed(1);		
-//		aggResults.push("For " + separateDate(spPrice[i].date) + ", bonds did " + aggRtn + "% while the S&P did " + spRtn + "% and the world did " + acwxRtn + "%.");
+//		aggResults.push("For " + separateDate(spPrice[i].date) + ", bonds did " + aggRtn + "% while the S&P did " + spRtn + "% and the world did " + msciRtn + "%.");
 
 		allDates.push(spPrice[i].date);
 
@@ -45,7 +45,7 @@ for ( let i = 0 ; i < 129 ; i++ ) {
 
 		if (aggResults.length === 0) {
 			aggResults[0] = {year: aYear, data: []};		
-			aggResults[0].data[0] = {month: aMonth, bReturn: aggRtn, spReturn: spRtn, wReturn: acwxRtn};
+			aggResults[0].data[0] = {month: aMonth, bReturn: aggRtn, spReturn: spRtn, wReturn: msciRtn};
 
 //			console.log(aggResults);
 
@@ -56,13 +56,13 @@ for ( let i = 0 ; i < 129 ; i++ ) {
 
 			if (aggResults[resultsEntries-1].year === aYear) {
 				dataEntries = (aggResults[resultsEntries-1].data).length;
-				aggResults[resultsEntries-1].data[dataEntries] = {month: aMonth, bReturn: aggRtn, spReturn: spRtn, wReturn: acwxRtn};
+				aggResults[resultsEntries-1].data[dataEntries] = {month: aMonth, bReturn: aggRtn, spReturn: spRtn, wReturn: msciRtn};
 
 //				console.log(aggResults);
 
 			} else {
 				aggResults[resultsEntries] = {year: aYear, data: []};		
-				aggResults[resultsEntries].data[0] = {month: aMonth, bReturn: aggRtn, spReturn: spRtn, wReturn: acwxRtn};				
+				aggResults[resultsEntries].data[0] = {month: aMonth, bReturn: aggRtn, spReturn: spRtn, wReturn: msciRtn};				
 			}
 		}
 	}

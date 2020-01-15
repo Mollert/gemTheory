@@ -25,6 +25,7 @@ html, body {
 	background-repeat: repeat-x;
 	background-size: contain;
 	background-position: center;
+	margin-bottom: 3rem;
 }
 
 .flexCenterBoth {

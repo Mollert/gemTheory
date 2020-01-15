@@ -8,12 +8,12 @@
 		<div id="missedGroup" class="dataGroup">
 			<div>
 				{{#each justMissed}}
-					<div class="while">{{month}} {{year}}, {{plusMonth}} saw the S&P 500 return {{return}}%.</div>
+					<div class="while">{{month}} {{year}}, {{plusMonth}} saw treasuries return {{returnT}}% vs. {{returnSP}}% for the S&P 500.</div>
 				{{/each}}
 			</div>
 		</div>
 
-		<div id="avR">The average "next month" return was <span class="return">{{avReturn}}%</span>.</div>
+		<div id="avR">The average "next month" return was <span class="return">{{avReturn}}%</span> for the S&P.</div>
 
 		<div class="getHome">Take me back <a href="/">home</a>.</div>
 

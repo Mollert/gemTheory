@@ -1,4 +1,5 @@
 
+let treasuryBills = require("../../queryData/treasuryBills.js");
 let spPrice = require("../../queryData/spPrice.js");
 
 let dateData = require("../../public/javascript/refineDate.js");
@@ -8,7 +9,7 @@ let monthsList = dateData.monthsOfYear;
 let fromWhenToBills = require("../../public/javascript/whenToBills.js");
 let treasuryDates = fromWhenToBills.allDates;
 
-
+let treasuryFuture = 0;
 let spFuture = 0;
 let averageTimes = 0;
 let averageReturn = 0;
@@ -28,14 +29,18 @@ for ( let i = treasuryDates.length ; i > 0 ; i-- ) {
 
 for ( let i = 0 ; i < treasuryDates.length ; i++ ) {
 
-	for ( let j = 0 ; j < 128 ; j++ ) {
+	for ( let j = 0 ; j < 194 ; j++ ) {
 
 		if (treasuryDates[i] === spPrice[j].date) {
-			spFuture = ((spPrice[j+1].price - spPrice[j+13].price) / spPrice[j+13].price) * 100;
+
+			treasuryFuture = treasuryBills[j-1].threeMonth / 12;
+
+			spFuture = ((spPrice[j-1].price - spPrice[j].price) / spPrice[j].price) * 100;
 
 			averageTimes++;
 			averageReturn = averageReturn + spFuture;
 
+			treasuryFuture = treasuryFuture.toFixed(2);
 			spFuture = spFuture.toFixed(1);
 		}
 
@@ -48,7 +53,7 @@ for ( let i = 0 ; i < treasuryDates.length ; i++ ) {
 			nextMonth = monthsList[monthNum];
 		}
 
-		listOfMissed[i] = {year: missedYear, month: missedMonth, plusMonth: nextMonth, return: spFuture};	
+		listOfMissed[i] = {year: missedYear, month: missedMonth, plusMonth: nextMonth, returnT: treasuryFuture, returnSP: spFuture};	
 	}
 }
 

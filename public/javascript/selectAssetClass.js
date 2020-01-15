@@ -1,6 +1,6 @@
 
 let spPrice = require("../../queryData/spPrice.js");
-let acwxPrice = require("../../queryData/acwxPrice.js");
+let msciExUSA = require("../../queryData/msciExUSA.js");
 let aggPrice = require("../../queryData/aggPrice.js");
 //let treasuryBills = require("../../queryData/treasuryBills.js");
 
@@ -16,7 +16,7 @@ let lastYearResults = {
 }
 
 let spRtn = 0;
-let acwxRtn = 0;
+let msciRtn = 0;
 let aggRtn = 0;
 let allReturns = [];
 let nextYearFirst = "";
@@ -33,8 +33,8 @@ for ( let i = 0 ; i < 100 ; i++ ) {
 // Get latest retun of the three and push into array
 	spRtn = ((spPrice[i].price - spPrice[i+12].price) / spPrice[i+12].price) * 100;
 	allReturns.push(spRtn);
-	acwxRtn = ((acwxPrice[i].price - acwxPrice[i+12].price) / acwxPrice[i+12].price) * 100;
-	allReturns.push(acwxRtn);
+	msciRtn = ((msciExUSA[i].price - msciExUSA[i+12].price) / msciExUSA[i+12].price) * 100;
+	allReturns.push(msciRtn);
 	aggRtn = ((aggPrice[i].price - aggPrice[i+12].price) / aggPrice[i+12].price) * 100;
 	allReturns.push(aggRtn);
 
@@ -74,9 +74,9 @@ for ( let i = 0 ; i < 100 ; i++ ) {
 			lastYearResults.third = "US Equities";
 		}
 
-		if(acwxRtn === allReturns[0]) {
+		if(msciRtn === allReturns[0]) {
 			lastYearResults.first = "World Equities ex US";
-		} else if (acwxRtn === allReturns[1]) {
+		} else if (msciRtn === allReturns[1]) {
 			lastYearResults.second = "World Equities ex US";
 		} else {
 			lastYearResults.third = "World Equities ex US";
@@ -101,7 +101,7 @@ for ( let i = 0 ; i < 100 ; i++ ) {
 // Setting up for single month asset verbage
 	if (spRtn === allReturns[0]) {
 		nextYearFirst = "US Equities";
-	} else if (acwxRtn === allReturns[0]) {
+	} else if (msciRtn === allReturns[0]) {
 		nextYearFirst = "World Equities ex US";
 	} else {
 		nextYearFirst = "Bonds";

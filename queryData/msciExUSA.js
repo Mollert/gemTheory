@@ -1,1307 +1,1308 @@
 
-const spPrice = [
+const msciExUSA = [
 	{
 		date: 201912,
-		price: 3230.78
+		price: 2035.383
 	},{
 		date: 201911,
-		price: 3140.98
+		price: 1974.385
 	},{
 		date: 201910,
-		price: 3037.56
+		price: 1953.037
 	},{
 		date: 201909,
-		price: 2976.74
+		price: 1893.702
 	},{
 		date: 201908,
-		price: 2926.46
+		price: 1847.804
 	},{
 		date: 201907,
-		price: 2980.38
+		price: 1899.671
 	},{
 		date: 201906,
-		price: 2941.76
+		price: 1923.861
 	},{
 		date: 201905,
-		price: 2752.06
+		price: 1818.889
 	},{
 		date: 201904,
-		price: 2945.83
+		price: 1920.740
 	},{
 		date: 201903,
-		price: 2834.40
+		price: 1874.070
 	},{
 		date: 201902,
-		price: 2784.49
+		price: 1874.153
 	},{
 		date: 201901,
-		price: 2704.10
+		price: 1831.021
 	},{
 		date: 201812,
-		price: 2506.85
+		price: 1710.883
 	},{
 		date: 201811,
-		price: 2760.17
+		price: 1806.323
 	},{
 		date: 201810,
-		price: 2711.74
+		price: 1811.273
 	},{
 		date: 201809,
-		price: 2913.98
+		price: 1969.332
 	},{
 		date: 201808,
-		price: 2901.52
+		price: 1959.320
 	},{
 		date: 201807,
-		price: 2816.29
+		price: 2002.271
 	},{
 		date: 201806,
-		price: 2718.37
+		price: 1955.227
 	},{
 		date: 201805,
-		price: 2705.27
+		price: 1980.356
 	},{
 		date: 201804,
-		price: 2648.05
+		price: 2029.637
 	},{
 		date: 201803,
-		price: 2640.87
+		price: 1991.389
 	},{
 		date: 201802,
-		price: 2713.83
+		price: 2035.271
 	},{
 		date: 201801,
-		price: 2823.81
+		price: 2140.969
 	},{
 		date: 201712,
-		price: 2673.61
+		price: 2046.467
 	},{
 		date: 201711,
-		price: 2647.58
+		price: 2012.304
 	},{
 		date: 201710,
-		price: 2575.26
+		price: 1995.508
 	},{
 		date: 201709,
-		price: 2519.36
+		price: 1970.061
 	},{
 		date: 201708,
-		price: 2471.65
+		price: 1925.046
 	},{
 		date: 201707,
-		price: 2470.30
+		price: 1930.658
 	},{
 		date: 201706,
-		price: 2423.41
+		price: 1875.647
 	},{
 		date: 201705,
-		price: 2411.80
+		price: 1877.475
 	},{
 		date: 201704,
-		price: 2384.20
+		price: 1826.758
 	},{
 		date: 201703,
-		price: 2362.72
+		price: 1793.338
 	},{
 		date: 201702,
-		price: 2363.64
+		price: 1756.786
 	},{
 		date: 201701,
-		price: 2278.87
+		price: 1740.545
 	},{
 		date: 201612,
-		price: 2238.83
+		price: 1690.925
 	},{
 		date: 201611,
-		price: 2198.81
+		price: 1638.985
 	},{
 		date: 201610,
-		price: 2126.15
+		price: 1668.576
 	},{
 		date: 201609,
-		price: 2168.27
+		price: 1702.978
 	},{
 		date: 201608,
-		price: 2170.95
+		price: 1686.987
 	},{
 		date: 201607,
-		price: 2173.60
+		price: 1689.938
 	},{
 		date: 201606,
-		price: 2098.86
+		price: 1611.700
 	},{
 		date: 201605,
-		price: 2096.96
+		price: 1665.792
 	},{
 		date: 201604,
-		price: 2065.30
+		price: 1694.213
 	},{
 		date: 201603,
-		price: 2059.74
+		price: 1647.687
 	},{
 		date: 201602,
-		price: 1932.23
+		price: 1549.657
 	},{
 		date: 201601,
-		price: 1940.24
+		price: 1575.601
 	},{
 		date: 201512,
-		price: 2043.94
+		price: 1693.055
 	},{
 		date: 201511,
-		price: 2080.41
+		price: 1725.476
 	},{
 		date: 201510,
-		price: 2079.36
+		price: 1756.449
 	},{
 		date: 201509,
-		price: 1920.03
+		price: 1634.945
 	},{
 		date: 201508,
-		price: 1972.18
+		price: 1726.219
 	},{
 		date: 201507,
-		price: 2103.84
+		price: 1866.642
 	},{
 		date: 201506,
-		price: 2063.11
+		price: 1838.715
 	},{
 		date: 201505,
-		price: 2107.39
+		price: 1895.394
 	},{
 		date: 201504,
-		price: 2085.51
+		price: 1920.997
 	},{
 		date: 201503,
-		price: 2067.89
+		price: 1847.267
 	},{
 		date: 201502,
-		price: 2104.50
+		price: 1886.644
 	},{
 		date: 201501,
-		price: 1994.99
+		price: 1783.035
 	},{
 		date: 201412,
-		price: 2058.90
+		price: 1990.535
 	},{
 		date: 201411,
-		price: 2067.56
+		price: 1853.542
 	},{
 		date: 201410,
-		price: 2018.05
+		price: 1834.240
 	},{
 		date: 201409,
-		price: 1972.29
+		price: 1865.119
 	},{
 		date: 201408,
-		price: 2003.37
+		price: 1949.698
 	},{
 		date: 201407,
-		price: 1930.67
+		price: 1952.986
 	},{
 		date: 201406,
-		price: 1960.23
+		price: 1989.428
 	},{
 		date: 201405,
-		price: 1923.57
+		price: 1965.025
 	},{
 		date: 201404,
-		price: 1883.95
+		price: 1945.638
 	},{
 		date: 201403,
-		price: 1872.34
+		price: 1924.734
 	},{
 		date: 201402,
-		price: 1859.45
+		price: 1938.004
 	},{
 		date: 201401,
-		price: 1782.59
+		price: 1841.299
 	},{
 		date: 201312,
-		price: 1848.36
+		price: 1919.917
 	},{
 		date: 201311,
-		price: 1805.81
+		price: 1893.167
 	},{
 		date: 201310,
-		price: 1756.54
+		price: 1885.382
 	},{
 		date: 201309,
-		price: 1681.55
+		price: 1825.328
 	},{
 		date: 201308,
-		price: 1632.97
+		price: 1709.130
 	},{
 		date: 201307,
-		price: 1685.73
+		price: 1735.944
 	},{
 		date: 201306,
-		price: 1606.28
+		price: 1649.122
 	},{
 		date: 201305,
-		price: 1630.74
+		price: 1716.394
 	},{
 		date: 201304,
-		price: 1597.57
+		price: 1764.429
 	},{
 		date: 201303,
-		price: 1569.19
+		price: 1694.738
 	},{
 		date: 201302,
-		price: 1514.68
+		price: 1688.360
 	},{
 		date: 201301,
-		price: 1498.11
+		price: 1708.831
 	},{
 		date: 201212,
-		price: 1426.19
+		price: 1630.094
 	},{
 		date: 201211,
-		price: 1416.18
+		price: 1583.973
 	},{
 		date: 201210,
-		price: 1412.16
+		price: 1554.518
 	},{
 		date: 201209,
-		price: 1440.67
+		price: 1544.968
 	},{
 		date: 201208,
-		price: 1406.58
+		price: 1504.510
 	},{
 		date: 201207,
-		price: 1379.32
+		price: 1467.193
 	},{
 		date: 201206,
-		price: 1362.16
+		price: 1450.255
 	},{
 		date: 201205,
-		price: 1310.33
+		price: 1363.978
 	},{
 		date: 201204,
-		price: 1397.91
+		price: 1549.291
 	},{
 		date: 201203,
-		price: 1408.47
+		price: 1582.660
 	},{
 		date: 201202,
-		price: 1365.68
+		price: 1601.262
 	},{
 		date: 201201,
-		price: 1312.41
+		price: 1521.751
 	},{
 		date: 201112,
-		price: 1257.60
+		price: 1445.066
 	},{
 		date: 201111,
-		price: 1246.96
+		price: 1462.498
 	},{
 		date: 201110,
-		price: 1253.30
+		price: 1538.103
 	},{
 		date: 201109,
-		price: 1131.42
+		price: 1402.614
 	},{
 		date: 201108,
-		price: 1218.89
+		price: 1564.715
 	},{
 		date: 201107,
-		price: 1292.28
+		price: 1714.032
 	},{
 		date: 201106,
-		price: 1320.64
+		price: 1744.037
 	},{
 		date: 201105,
-		price: 1345.20
+		price: 1772.492
 	},{
 		date: 201104,
-		price: 1363.61
+		price: 1837.775
 	},{
 		date: 201103,
-		price: 1325.83
+		price: 1749.016
 	},{
 		date: 201102,
-		price: 1327.22
+		price: 1791.900
 	},{
 		date: 201101,
-		price: 1286.12
+		price: 1730.912
 	},{
 		date: 201012,
-		price: 1257.64
+		price: 1695.576
 	},{
 		date: 201011,
-		price: 1180.55
+		price: 1570.528
 	},{
 		date: 201010,
-		price: 1183.26
+		price: 1643.519
 	},{
 		date: 201009,
-		price: 1141.20
+		price: 1577.119
 	},{
 		date: 201008,
-		price: 1049.33
+		price: 1453.045
 	},{
 		date: 201007,
-		price: 1101.60
+		price: 1501.212
 	},{
 		date: 201006,
-		price: 1030.71
+		price: 1375.320
 	},{
 		date: 201005,
-		price: 1089.41
+		price: 1397.828
 	},{
 		date: 201004,
-		price: 1186.69
+		price: 1580.341
 	},{
 		date: 201003,
-		price: 1169.43
+		price: 1608.794
 	},{
 		date: 201002,
-		price: 1104.49
+		price: 1517.400
 	},{
 		date: 201001,
-		price: 1073.87
+		price: 1521.729
 	},{
 		date: 200912,
-		price: 1115.10
+		price: 1597.281
 	},{
 		date: 200911,
-		price: 1095.63
+		price: 1573.659
 	},{
 		date: 200910,
-		price: 1036.19
+		price: 1539.338
 	},{
 		date: 200909,
-		price: 1057.08
+		price: 1565.318
 	},{
 		date: 200908,
-		price: 1020.62
+		price: 1506.642
 	},{
 		date: 200907,
-		price: 987.48
+		price: 1441.328
 	},{
 		date: 200906,
-		price: 919.32
+		price: 1318.736
 	},{
 		date: 200905,
-		price: 919.14
+		price: 1335.224
 	},{
 		date: 200904,
-		price: 872.81
+		price: 1192.715
 	},{
 		date: 200903,
-		price: 797.87
+		price: 1061.261
 	},{
 		date: 200902,
-		price: 735.09
+		price: 999.879
 	},{
 		date: 200901,
-		price: 825.88
+		price: 1115.839
 	},{
 		date: 200812,
-		price: 903.25
+		price: 1231.743
 	},{
 		date: 200811,
-		price: 896.24
+		price: 1171.218
 	},{
 		date: 200810,
-		price: 968.75
+		price: 1242.112
 	},{
 		date: 200809,
-		price: 1166.36
+		price: 1569.736
 	},{
 		date: 200808,
-		price: 1282.83
+		price: 1839.809
 	},{
 		date: 200807,
-		price: 1267.38
+		price: 1918.442
 	},{
 		date: 200806,
-		price: 1280.00
+		price: 1990.710
 	},{
 		date: 200805,
-		price: 1400.38
+		price: 2161.756
 	},{
 		date: 200804,
-		price: 1385.59
+		price: 2143.182
 	},{
 		date: 200803,
-		price: 1322.70
+		price: 2039.001
 	},{
 		date: 200802,
-		price: 1330.63
+		price: 2077.853
 	},{
 		date: 200801,
-		price: 1378.55
+		price: 2044.092
 	},{
 		date: 200712,
-		price: 1468.36
+		price: 2247.967
 	},{
 		date: 200711,
-		price: 1481.14
+		price: 2292.321
 	},{
 		date: 200710,
-		price: 1549.38
+		price: 2389.569
 	},{
 		date: 200709,
-		price: 1526.75
+		price: 2291.978
 	},{
 		date: 200708,
-		price: 1473.99
+		price: 2172.445
 	},{
 		date: 200707,
-		price: 1455.27
+		price: 2209.640
 	},{
 		date: 200706,
-		price: 1503.35
+		price: 2242.060
 	},{
 		date: 200705,
-		price: 1530.62
+		price: 2243.518
 	},{
 		date: 200704,
-		price: 1482.37
+		price: 2205.290
 	},{
 		date: 200703,
-		price: 1420.86
+		price: 2116.009
 	},{
 		date: 200702,
-		price: 1406.82
+		price: 2070.830
 	},{
 		date: 200701,
-		price: 1438.24
+		price: 2056.609
 	},{
 		date: 200612,
-		price: 1418.30
+		price: 2045.036
 	},{
 		date: 200611,
-		price: 1400.63
+		price: 1989.163
 	},{
 		date: 200610,
-		price: 1377.94
+		price: 1935.247
 	},{
 		date: 200609,
-		price: 1335.85
+		price: 1862.597
 	},{
 		date: 200608,
-		price: 1303.82
+		price: 1867.185
 	},{
 		date: 200607,
-		price: 1276.66
+		price: 1820.014
 	},{
 		date: 200606,
-		price: 1270.20
+		price: 1804.388
 	},{
 		date: 200605,
-		price: 1270.09
+		price: 1810.366
 	},{
 		date: 200604,
-		price: 1310.61
+		price: 1890.896
 	},{
 		date: 200603,
-		price: 1294.83
+		price: 1808.869
 	},{
 		date: 200602,
-		price: 1280.66
+		price: 1759.961
 	},{
 		date: 200601,
-		price: 1280.08
+		price: 1768.044
 	},{
 		date: 200512,
-		price: 1248.29
+		price: 1663.543
 	},{
 		date: 200511,
-		price: 1249.48
+		price: 1590.651
 	},{
 		date: 200510,
-		price: 1207.01
+		price: 1552.556
 	},{
 		date: 200509,
-		price: 1228.81
+		price: 1605.146
 	},{
 		date: 200508,
-		price: 1220.33
+		price: 1537.706
 	},{
 		date: 200507,
-		price: 1234.18
+		price: 1500.109
 	},{
 		date: 200506,
-		price: 1191.33
+		price: 1453.888
 	},{
 		date: 200505,
-		price: 1191.50
+		price: 1433.365
 	},{
 		date: 200504,
-		price: 1156.85
+		price: 1436.585
 	},{
 		date: 200503,
-		price: 1180.59
+		price: 1479.570
 	},{
 		date: 200502,
-		price: 1203.60
+		price: 1519.574
 	},{
 		date: 200501,
-		price: 1181.27
+		price: 1457.265
 	},{
 		date: 200412,
-		price: 1211.92
+		price: 1487.234
 	},{
 		date: 200411,
-		price: 1173.82
+		price: 1427.834
 	},{
 		date: 200410,
-		price: 1130.20
+		price: 1341.197
 	},{
 		date: 200409,
-		price: 1114.58
+		price: 1295.439
 	},{
 		date: 200408,
-		price: 1104.24
+		price: 1260.489
 	},{
 		date: 200407,
-		price: 1101.72
+		price: 1258.460
 	},{
 		date: 200406,
-		price: 1140.84
+		price: 1298.990
 	},{
 		date: 200405,
-		price: 1120.68
+		price: 1272.104
 	},{
 		date: 200404,
-		price: 1107.30
+		price: 1271.116
 	},{
 		date: 200403,
-		price: 1126.21
+		price: 1309.036
 	},{
 		date: 200402,
-		price: 1144.94
+		price: 1307.568
 	},{
 		date: 200401,
-		price: 1131.13
+		price: 1279.702
 	},{
 		date: 200312,
-		price: 1111.92
+		price: 1262.710
 	},{
 		date: 200311,
-		price: 1058.20
+		price: 1173.285
 	},{
 		date: 200310,
-		price: 1050.71
+		price: 1148.891
 	},{
 		date: 200309,
-		price: 995.97
+		price: 1081.845
 	},{
 		date: 200308,
-		price: 1008.01
+		price: 1052.010
 	},{
 		date: 200307,
-		price: 990.31
+		price: 1028.062
 	},{
 		date: 200306,
-		price: 974.50
+		price: 1006.031
 	},{
 		date: 200305,
-		price: 963.59
+		price: 984.339
 	},{
 		date: 200304,
-		price: 916.92
+		price: 930.247
 	},{
 		date: 200303,
-		price: 848.18
+		price: 851.892
 	},{
 		date: 200302,
-		price: 841.15
+		price: 872.293
 	},{
 		date: 200301,
-		price: 855.70
+		price: 891.439
 	},{
 		date: 200212,
-		price: 879.82
+		price: 927.278
 	},{
 		date: 200211,
-		price: 936.31
+		price: 958.859
 	},{
 		date: 200210,
-		price: 885.76
+		price: 917.691
 	},{
 		date: 200209,
-		price: 815.28
+		price: 872.493
 	},{
 		date: 200208,
-		price: 916.07
+		price: 977.546
 	},{
 		date: 200207,
-		price: 911.62
+		price: 981.421
 	},{
 		date: 200206,
-		price: 989.81
+		price: 1090.626
 	},{
 		date: 200205,
-		price: 1067.14
+		price: 1138.761
 	},{
 		date: 200204,
-		price: 1076.92
+		price: 1127.691
 	},{
 		date: 200203,
-		price: 1147.39
+		price: 1123.413
 	},{
 		date: 200202,
-		price: 1106.73
+		price: 1069.650
 	},{
 		date: 200201,
-		price: 1130.20
+		price: 1064.496
 	},{
 		date: 200112,
-		price: 1148.08
+		price: 1122.051
 	},{
 		date: 200111,
-		price: 1139.46
+		price: 1115.179
 	},{
 		date: 200110,
-		price: 1059.78
+		price: 1073.807
 	},{
 		date: 200109,
-		price: 1040.95
+		price: 1048.444
 	},{
 		date: 200108,
-		price: 1133.59
+		price: 1167.798
 	},{
 		date: 200107,
-		price: 1211.23
+		price: 1201.945
 	},{
 		date: 200106,
-		price: 1224.42
+		price: 1223.964
 	},{
 		date: 200105,
-		price: 1255.83
+		price: 1277.880
 	},{
 		date: 200104,
-		price: 1249.47
+		price: 1325.205
 	},{
 		date: 200103,
-		price: 1160.33
+		price: 1241.334
 	},{
 		date: 200102,
-		price: 1239.95
+		price: 1335.023
 	},{
 		date: 200101,
-		price: 1366.02
+		price: 1451.202
 	},{
 		date: 200012,
-		price: 1320.28
+		price: 1448.888
 	},{
 		date: 200011,
-		price: 1314.95
+		price: 1401.389
 	},{
 		date: 200010,
-		price: 1429.40
+		price: 1461.792
 	},{
 		date: 200009,
-		price: 1436.51
+		price: 1504.294
 	},{
 		date: 200008,
-		price: 1517.68
+		price: 1588.111
 	},{
 		date: 200007,
-		price: 1430.83
+		price: 1569.162
 	},{
 		date: 200006,
-		price: 1454.60
+		price: 1633.145
 	},{
 		date: 200005,
-		price: 1420.60
+		price: 1567.088
 	},{
 		date: 200004,
-		price: 1452.43
+		price: 1607.601
 	},{
 		date: 200003,
-		price: 1498.58
+		price: 1697.192
 	},{
 		date: 200002,
-		price: 1366.42
+		price: 1631.812
 	},{
 		date: 200001,
-		price: 1394.46
+		price: 1588.323
 	},{
 		date: 199912,
-		price: 1469.25
+		price: 1692.696
 	},{
 		date: 199911,
-		price: 1388.91
+		price: 1551.577
 	},{
 		date: 199910,
-		price: 1362.93
+		price: 1500.686
 	},{
 		date: 199909,
-		price: 1282.71
+		price: 1446.421
 	},{
 		date: 199908,
-		price: 1320.41
+		price: 1432.584
 	},{
 		date: 199907,
-		price: 1328.72
+		price: 1430.152
 	},{
 		date: 199906,
-		price: 1372.71
+		price: 1391.724
 	},{
 		date: 199905,
-		price: 1301.84
+		price: 1340.888
 	},{
 		date: 199904,
-		price: 1335.18
+		price: 1413.895
 	},{
 		date: 199903,
-		price: 1286.37
+		price: 1357.291
 	},{
 		date: 199902,
-		price: 1238.33
+		price: 1304.469
 	},{
 		date: 199901,
-		price: 1279.64
+		price: 1339.763
 	},{
 		date: 199812,
-		price: 1229.23
+		price: 1341.086
 	},{
 		date: 199811,
-		price: 1163.63
+		price: 1293.069
 	},{
 		date: 199810,
-		price: 1098.67
+		price: 1232.212
 	},{
 		date: 199809,
-		price: 1017.01
+		price: 1117.466
 	},{
 		date: 199808,
-		price: 957.28
+		price: 1151.958
 	},{
 		date: 199807,
-		price: 1120.67
+		price: 1322.404
 	},{
 		date: 199806,
-		price: 1133.84
+		price: 1315.349
 	},{
 		date: 199805,
-		price: 1090.82
+		price: 1309.946
 	},{
 		date: 199804,
-		price: 1111.75
+		price: 1318.353
 	},{
 		date: 199803,
-		price: 1101.75
+		price: 1309.744
 	},{
 		date: 199802,
-		price: 1049.34
+		price: 1269.585
 	},{
 		date: 199801,
-		price: 980.28
+		price: 1193.399
 	},{
 		date: 199712,
-		price: 970.43
+		price: 1146.026
 	},{
 		date: 199711,
-		price: 955.40
+		price: 1136.677
 	},{
 		date: 199710,
-		price: 914.62
+		price: 1151.047
 	},{
 		date: 199709,
-		price: 947.28
+		price: 1246.601
 	},{
 		date: 199708,
-		price: 899.47
+		price: 1181.749
 	},{
 		date: 199707,
-		price: 954.31
+		price: 1277.299
 	},{
 		date: 199706,
-		price: 885.14
+		price: 1255.692
 	},{
 		date: 199705,
-		price: 848.28
+		price: 1193.464
 	},{
 		date: 199704,
-		price: 801.34
+		price: 1121.061
 	},{
 		date: 199703,
-		price: 757.12
+		price: 1115.685
 	},{
 		date: 199702,
-		price: 790.82
+		price: 1116.052
 	},{
 		date: 199701,
-		price: 786.16
+		price: 1100.823
 	},{
 		date: 199612,
-		price: 740.74
+		price: 1137.719
 	},{
 		date: 199611,
-		price: 757.02
+		price: 1155.257
 	},{
 		date: 199610,
-		price: 705.27
+		price: 1110.963
 	},{
 		date: 199609,
-		price: 687.33
+		price: 1119.931
 	},{
 		date: 199608,
-		price: 651.99
+		price: 1091.837
 	},{
 		date: 199607,
-		price: 639.95
+		price: 1089.200
 	},{
 		date: 199606,
-		price: 670.63
+		price: 1123.581
 	},{
 		date: 199605,
-		price: 669.12
+		price: 1120.181
 	},{
 		date: 199604,
-		price: 654.17
+		price: 1141.129
 	},{
 		date: 199603,
-		price: 645.50
+		price: 1109.787
 	},{
 		date: 199602,
-		price: 640.43
+		price: 1088.194
 	},{
 		date: 199601,
-		price: 636.02
-	},{		
+		price: 1086.464
+	},{
 		date: 199512,
-		price: 615.93
+		price: 1081.499
 	},{
 		date: 199511,
-		price: 605.37
+		price: 1042.138
 	},{
 		date: 199510,
-		price: 581.50
+		price: 1014.932
 	},{
 		date: 199509,
-		price: 584.41
+		price: 1043.675
 	},{
 		date: 199508,
-		price: 561.88
+		price: 1025.979
 	},{
 		date: 199507,
-		price: 562.06
+		price: 1066.530
 	},{
 		date: 199506,
-		price: 544.75
+		price: 1006.992
 	},{
 		date: 199505,
-		price: 533.40
+		price: 1025.071
 	},{
 		date: 199504,
-		price: 514.71
+		price: 1036.886
 	},{
 		date: 199503,
-		price: 500.71
+		price: 1001.368
 	},{
 		date: 199502,
-		price: 487.39
+		price: 944.530
 	},{
 		date: 199501,
-		price: 470.42
+		price: 946.505
 	},{
 		date: 199412,
-		price: 459.27
+		price: 986.733
 	},{
 		date: 199411,
-		price: 453.69
+		price: 981.355
 	},{
 		date: 199410,
-		price: 472.35
+		price: 1032.824
 	},{
 		date: 199409,
-		price: 462.71
+		price: 1002.571
 	},{
 		date: 199408,
-		price: 475.49
+		price: 1034.023
 	},{
 		date: 199407,
-		price: 458.26
+		price: 1010.061
 	},{
 		date: 199406,
-		price: 444.27
+		price: 1000.302
 	},{
 		date: 199405,
-		price: 456.50
+		price: 990.130
 	},{
 		date: 199404,
-		price: 450.91
+		price: 996.555
 	},{
 		date: 199403,
-		price: 445.77
+		price: 958.949
 	},{
 		date: 199402,
-		price: 467.14
+		price: 1003.332
 	},{
 		date: 199401,
-		price: 481.61
+		price: 1009.087
 	},{
 		date: 199312,
-		price: 466.45
+		price: 932.742
 	},{
 		date: 199311,
-		price: 461.79
+		price: 871.488
 	},{
 		date: 199310,
-		price: 467.83
+		price: 953.630
 	},{
 		date: 199309,
-		price: 458.93
+		price: 923.980
 	},{
 		date: 199308,
-		price: 463.56
+		price: 947.353
 	},{
 		date: 199307,
-		price: 448.13
+		price: 902.017
 	},{
 		date: 199306,
-		price: 450.53
+		price: 873.661
 	},{
 		date: 199305,
-		price: 450.19
+		price: 888.387
 	},{
 		date: 199304,
-		price: 440.19
+		price: 870.824
 	},{
 		date: 199303,
-		price: 451.67
+		price: 798.020
 	},{
 		date: 199302,
-		price: 443.38
+		price: 736.598
 	},{
 		date: 199301,
-		price: 438.78
+		price: 715.253
 	},{
 		date: 199212,
-		price: 435.71
+		price: 716.885
 	},{
 		date: 199211,
-		price: 431.35
+		price: 713.820
 	},{
 		date: 199210,
-		price: 418.68
+		price: 710.045
 	},{
 		date: 199209,
-		price: 417.80
+		price: 748.266
 	},{
 		date: 199208,
-		price: 414.03
+		price: 766.648
 	},{
 		date: 199207,
-		price: 424.21
+		price: 725.581
 	},{
 		date: 199206,
-		price: 408.14
+		price: 744.413
 	},{
 		date: 199205,
-		price: 415.35
+		price: 781.106
 	},{
 		date: 199204,
-		price: 414.95
+		price: 735.161
 	},{
 		date: 199203,
-		price: 403.69
+		price: 733.691
 	},{
 		date: 199202,
-		price: 412.70
+		price: 786.343
 	},{
 		date: 199201,
-		price: 408.78
+		price: 815.939
 	},{
 		date: 199112,
-		price: 417.09
+		price: 833.598
 	},{
 		date: 199111,
-		price: 375.22
+		price: 795.888
 	},{
 		date: 199110,
-		price: 392.45
+		price: 835.060
 	},{
 		date: 199109,
-		price: 387.86
+		price: 823.429
 	},{
 		date: 199108,
-		price: 395.43
+		price: 783.342
 	},{
 		date: 199107,
-		price: 387.81
+		price: 800.016
 	},{
 		date: 199106,
-		price: 371.16
+		price: 764.930
 	},{
 		date: 199105,
-		price: 389.83
+		price: 824.570
 	},{
 		date: 199104,
-		price: 375.34
+		price: 815.954
 	},{
 		date: 199103,
-		price: 375.22
+		price: 809.081
 	},{
 		date: 199102,
-		price: 367.07
+		price: 859.958
 	},{
 		date: 199101,
-		price: 343.93
+		price: 779.209
 	},{
 		date: 199012,
-		price: 330.22
+		price: 757.359
 	},{
 		date: 199011,
-		price: 322.22
+		price: 745.779
 	},{
 		date: 199010,
-		price: 304.00
+		price: 790.972
 	},{
 		date: 199009,
-		price: 306.05
+		price: 691.119
 	},{
 		date: 199008,
-		price: 322.56
+		price: 800.424
 	},{
 		date: 199007,
-		price: 356.15
+		price: 885.501
 	},{
 		date: 199006,
-		price: 358.02
+		price: 874.028
 	},{
 		date: 199005,
-		price: 361.23
+		price: 883.030
 	},{
 		date: 199004,
-		price: 330.80
+		price: 795.141
 	},{
 		date: 199003,
-		price: 339.94
+		price: 805.342
 	},{
 		date: 199002,
-		price: 331.89
+		price: 895.578
 	},{
 		date: 199001,
-		price: 329.08
+		price: 961.836
 	},{
 		date: 198912,
-		price: 353.40
+		price: 1001.555
 	},{
 		date: 198911,
-		price: 345.99
+		price: 967.278
 	},{
 		date: 198910,
-		price: 340.36
+		price: 923.099
 	},{
 		date: 198909,
-		price: 349.15
+		price: 960.914
 	},{
 		date: 198908,
-		price: 351.45
+		price: 922.166
 	},{
 		date: 198907,
-		price: 346.08
+		price: 964.044
 	},{
 		date: 198906,
-		price: 317.98
+		price: 859.140
 	},{
 		date: 198905,
-		price: 320.52
+		price: 873.081
 	},{
 		date: 198904,
-		price: 309.64
+		price: 922.252
 	},{
 		date: 198903,
-		price: 294.87
+		price: 914.315
 	},{
 		date: 198902,
-		price: 288.86
+		price: 932.361
 	},{
 		date: 198901,
-		price: 297.47
+		price: 929.670
 	},{
 		date: 198812,
-		price: 277.72
+		price: 912.463
 	},{
 		date: 198811,
-		price: 273.70
+		price: 907.915
 	},{
 		date: 198810,
-		price: 278.97
+		price: 859.650
 	},{
 		date: 198809,
-		price: 271.91
+		price: 794.238
 	},{
 		date: 198808,
-		price: 261.52
+		price: 762.785
 	},{
 		date: 198807,
-		price: 272.02
+		price: 816.333
 	},{
 		date: 198806,
-		price: 273.50
+		price: 794.002
 	},{
 		date: 198805,
-		price: 262.16
+		price: 813.289
 	},{
 		date: 198804,
-		price: 261.33
+		price: 841.246
 	},{
 		date: 198803,
-		price: 258.89
+		price: 830.435
 	},{
 		date: 198802,
-		price: 267.82
+		price: 783.533
 	},{
 		date: 198801,
-		price: 257.07
+		price: 735.683
 	},{
 		date: 198712,
-		price: 247.08
+		price: 725.291
 	},{
 		date: 198711,
-		price: 230.30
+		price: 704.726
 	},{
 		date: 198710,
-		price: 251.79
+		price: 700.302
 	},{
 		date: 198709,
-		price: 321.83
+		price: 820.223
 	},{
 		date: 198708,
-		price: 329.80
+		price: 833.519
 	},{
 		date: 198707,
-		price: 318.66
+		price: 778.898
 	},{
 		date: 198706,
-		price: 304.00
+		price: 776.517
 	},{
 		date: 198705,
-		price: 290.10
+		price: 800.295
 	},{
 		date: 198704,
-		price: 288.36
+		price: 801.640
 	},{
 		date: 198703,
-		price: 291.70
+		price: 729.766
 	},{
 		date: 198702,
-		price: 284.20
+		price: 673.671
 	},{
 		date: 198701,
-		price: 274.08
+		price: 653.954
 	},{
 		date: 198612,
-		price: 242.17
+		price: 590.842
 	},{
 		date: 198611,
-		price: 249.22
+		price: 562.831
 	},{
 		date: 198610,
-		price: 243.98
+		price: 533.669
 	},{
 		date: 198609,
-		price: 231.32
+		price: 570.451
 	},{
 		date: 198608,
-		price: 252.93
+		price: 576.296
 	},{
 		date: 198607,
-		price: 236.12
+		price: 526.023
 	},{
 		date: 198606,
-		price: 250.84
+		price: 498.791
 	},{
 		date: 198605,
-		price: 247.35
+		price: 470.008
 	},{
 		date: 198604,
-		price: 235.52
+		price: 491.333
 	},{
 		date: 198603,
-		price: 238.90
+		price: 463.471
 	},{
 		date: 198602,
-		price: 226.92
+		price: 408.819
 	},{
 		date: 198601,
-		price: 211.78
+		price: 371.026
 	},{
 		date: 198512,
-		price: 211.28
+		price: 363.191
 	},{
 		date: 198511,
-		price: 202.17
+		price: 348.867
 	},{
 		date: 198510,
-		price: 189.82
+		price: 334.817
 	},{
 		date: 198509,
-		price: 182.08
+		price: 316.963
 	},{
 		date: 198508,
-		price: 188.63
+		price: 302.872
 	},{
 		date: 198507,
-		price: 190.92
+		price: 295.328
 	},{
 		date: 198506,
-		price: 191.85
+		price: 282.280
 	},{
 		date: 198505,
-		price: 189.55
+		price: 276.678
 	},{
 		date: 198504,
-		price: 179.83
+		price: 266.539
 	},{
 		date: 198503,
-		price: 180.66
+		price: 267.777
 	},{
 		date: 198502,
-		price: 181.18
+		price: 249.598
 	},{
 		date: 198501,
-		price: 179.93
+		price: 252.444
 	},{
 		date: 198412,
-		price: 167.24
+		price: 245.972
 	},{
 		date: 198411,
-		price: 163.58
+		price: 242.784
 	},{
 		date: 198410,
-		price: 166.09
+		price: 246.725
 	},{
 		date: 198409,
-		price: 166.10
+		price: 242.767
 	},{
 		date: 198408,
-		price: 166.68
+		price: 245.569
 	},{
 		date: 198407,
-		price: 150.66
+		price: 225.474
 	},{
 		date: 198406,
-		price: 153.18
+		price: 241.758
 	},{
 		date: 198405,
-		price: 150.55
+		price: 243.379
 	},{
 		date: 198404,
-		price: 160.05
+		price: 269.279
 	},{
 		date: 198403,
-		price: 159.18
+		price: 274.567
 	},{
 		date: 198402,
-		price: 157.06
+		price: 254.927
 	},{
 		date: 198401,
-		price: 163.41
+		price: 252.018
 	}
 ];
 
 // date is at the end of the month
 
-// https://www.investing.com/indices/us-spx-500-historical-data
+// msci All Country ex US Index
+// https://www.msci.com/end-of-day-data-search; World ex USA
 
 
-module.exports = spPrice;
+module.exports = msciExUSA;
