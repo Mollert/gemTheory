@@ -4,10 +4,10 @@ let spPrice = require("../../queryData/spPrice.js");
 
 let dateData = require("../../public/javascript/refineDate.js");
 let splitDate = dateData.divideDate;
-let monthsList = dateData.monthsOfYear;
+let monthsList = [...dateData.monthsOfYear];
 
 let fromWhenToBills = require("../../public/javascript/whenToBills.js");
-let treasuryDates = fromWhenToBills.allDates;
+let treasuryDates = [...fromWhenToBills.allDates];
 
 let treasuryFuture = 0;
 let spFuture = 0;
@@ -47,13 +47,13 @@ for ( let i = 0 ; i < treasuryDates.length ; i++ ) {
 		missedYear = splitDate(treasuryDates[i])[0];
 		missedMonth = splitDate(treasuryDates[i])[1];
 		monthNum = splitDate(treasuryDates[i])[2];
-		if (monthNum === 11) {
+		if (monthNum === 12) {
 			nextMonth = monthsList[0];
 		} else {
 			nextMonth = monthsList[monthNum];
 		}
 
-		listOfMissed[i] = {year: missedYear, month: missedMonth, plusMonth: nextMonth, returnT: treasuryFuture, returnSP: spFuture};	
+		listOfMissed[i] = {year: missedYear, month: missedMonth, plusMonth: nextMonth, returnT: treasuryFuture, returnSP: spFuture};
 	}
 }
 

@@ -68,6 +68,8 @@ for ( let i = 0 ; i < 182 ; i++ ) {
 	}
 }
 
+//console.log(allDates);
+
 //console.log(aggResults);
 
 //console.log(separateDate(spPrice[110].date));
