@@ -29,7 +29,7 @@ for ( let i = treasuryDates.length ; i > 0 ; i-- ) {
 
 for ( let i = 0 ; i < treasuryDates.length ; i++ ) {
 
-	for ( let j = 0 ; j < 194 ; j++ ) {
+	for ( let j = 1 ; j < 194 ; j++ ) {
 
 		if (treasuryDates[i] === spPrice[j].date) {
 
