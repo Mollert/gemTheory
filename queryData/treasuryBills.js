@@ -1,6 +1,11 @@
 
 const treasuryBills = [
 	{
+		date: 202004,
+		threeMonth: 0.09,
+		sixMonth: 0.11,
+		oneYear: 0.16
+	},{
 		date: 202003,
 		threeMonth: 0.11,
 		sixMonth: 0.15,
@@ -2120,6 +2125,61 @@ const treasuryBills = [
 		threeMonth: 8.12,
 		sixMonth: 8.64,
 		oneYear: 9.22
+	},{
+		date: 198411,
+		threeMonth: 8.74,
+		sixMonth: 9.18,
+		oneYear: 9.71
+	},{
+		date: 198410,
+		threeMonth: 9.35,
+		sixMonth: 9.84,
+		oneYear: 10.26
+	},{
+		date: 198409,
+		threeMonth: 10.63,
+		sixMonth: 11.05,
+		oneYear: 11.43
+	},{
+		date: 198408,
+		threeMonth: 11.06,
+		sixMonth: 11.48,
+		oneYear: 11.96
+	},{
+		date: 198407,
+		threeMonth: 10.83,
+		sixMonth: 11.40,
+		oneYear: 11.86
+	},{
+		date: 198406,
+		threeMonth: 10.31,
+		sixMonth: 11.19,
+		oneYear: 12.30
+	},{
+		date: 198405,
+		threeMonth: 10.13,
+		sixMonth: 11.33,
+		oneYear: 12.15
+	},{
+		date: 198404,
+		threeMonth: 10.10,
+		sixMonth: 10.48,
+		oneYear: 11.11
+	},{
+		date: 198403,
+		threeMonth: 10.09,
+		sixMonth: 10.49,
+		oneYear: 10.80
+	},{
+		date: 198402,
+		threeMonth: 9.49,
+		sixMonth: 9.89,
+		oneYear: 10.21
+	},{
+		date: 198401,
+		threeMonth: 9.26,
+		sixMonth: 9.53,
+		oneYear: 9.85
 	}
 ];
 

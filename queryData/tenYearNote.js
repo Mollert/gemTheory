@@ -1,6 +1,9 @@
 
 const tenYearNote = [
 	{
+		date: 202004,
+		tenYear: 0.66
+	},{
 		date: 202003,
 		tenYear: 0.87
 	},{
@@ -1272,6 +1275,39 @@ const tenYearNote = [
 	},{
 		date: 198412,
 		tenYear: 11.50
+	},{
+		date: 198411,
+		tenYear: 11.57
+	},{
+		date: 198410,
+		tenYear: 12.16
+	},{
+		date: 198409,
+		tenYear: 12.52
+	},{
+		date: 198408,
+		tenYear: 12.72
+	},{
+		date: 198407,
+		tenYear: 13.36
+	},{
+		date: 198406,
+		tenYear: 13.56
+	},{
+		date: 198405,
+		tenYear: 13.41
+	},{
+		date: 198404,
+		tenYear: 12.63
+	},{
+		date: 198403,
+		tenYear: 12.32
+	},{
+		date: 198402,
+		tenYear: 11.84
+	},{
+		date: 198401,
+		tenYear: 11.67
 	}
 ];
 
