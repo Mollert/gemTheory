@@ -1,10 +1,6 @@
 
 /* whenToBillsPage  */
 
-#whenToHeight {
-	height: 130rem;	
-}
-
 .explaination {
 	font-family: numTwo;
 	font-size: 2rem;
@@ -44,6 +40,7 @@
 }
 
 .getHome {
+	height: 6rem;
 	margin-top: 3rem;	
 	font-family: numTwo;
 	font-size: 1.6rem;
@@ -51,10 +48,6 @@
 }
 
 /* afterBillsPage  */
-
-#afterHeight {
-	height: 60rem;	
-}
 
 #missedGroup {
 	margin-top: 1rem;
