@@ -1,6 +1,9 @@
 
 const acwxPrice = [
 	{
+		date: 202006,
+		price: 43.24
+	},{
 		date: 202005,
 		price: 41.89
 	},{
