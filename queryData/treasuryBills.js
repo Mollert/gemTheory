@@ -1,9 +1,24 @@
 
 const treasuryBills = [
 	{
-		date: 202007,
+		date: 202010,
 		threeMonth: 0.09,
 		sixMonth: 0.11,
+		oneYear: 0.13
+	},{
+		date: 202009,
+		threeMonth: 0.10,
+		sixMonth: 0.11,
+		oneYear: 0.12
+	},{
+		date: 202008,
+		threeMonth: 0.11,
+		sixMonth: 0.13,
+		oneYear: 0.12
+	},{
+		date: 202007,
+		threeMonth: 0.09,
+		sixMonth: 0.10,
 		oneYear: 0.11
 	},{
 		date: 202006,
