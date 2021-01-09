@@ -1,6 +1,9 @@
 
 const tenYearNote = [
 	{
+		date: 202012,
+		tenYear: 0.93
+	},{
 		date: 202011,
 		tenYear: 0.87
 	},{
