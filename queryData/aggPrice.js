@@ -1,6 +1,9 @@
 
 const aggPrice = [
 	{
+		date: 202104,
+		price: 114.49
+	},{
 		date: 202103,
 		price: 113.83
 	},{
