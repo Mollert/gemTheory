@@ -1,6 +1,9 @@
 
 const msciExUSA = [
 	{
+		date: 202105,
+		price: 2348.123
+	},{
 		date: 202104,
 		price: 2277.009
 	},{
