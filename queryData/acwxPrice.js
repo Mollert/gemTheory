@@ -1,6 +1,9 @@
 
 const acwxPrice = [
 	{
+		date: 202108,
+		price: 57.38
+	},{
 		date: 202107,
 		price: 56.56
 	},{
@@ -485,7 +488,7 @@ const acwxPrice = [
 
 // date is at the end of the month
 
-// https://www.investing.com/etfs/ishares-msci-acwi-x-us-historical-data
+// 
 
 
 module.exports = acwxPrice;
