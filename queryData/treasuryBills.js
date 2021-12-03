@@ -1,6 +1,11 @@
 
 const treasuryBills = [
 	{
+		date: 202111,
+		threeMonth: 0.05,
+		sixMonth: 0.10,
+		oneYear: 0.24
+	},{
 		date: 202110,
 		threeMonth: 0.05,
 		sixMonth: 0.07,
