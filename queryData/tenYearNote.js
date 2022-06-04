@@ -1,6 +1,9 @@
 
 const tenYearNote = [
 	{
+		date: 202205,
+		yield: 2.90
+	},{
 		date: 202204,
 		yield: 2.75
 	},{
