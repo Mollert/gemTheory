@@ -1,6 +1,16 @@
 
 const treasuryBills = [
 	{
+		date: 202207,
+		threeMonth: 2.41,
+		sixMonth: 2.91,
+		oneYear: 2.98
+	},{
+		date: 202206,
+		threeMonth: 1.72,
+		sixMonth: 2.51,
+		oneYear: 2.80
+	},{
 		date: 202205,
 		threeMonth: 1.16,
 		sixMonth: 1.64,
