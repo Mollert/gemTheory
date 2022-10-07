@@ -1,6 +1,12 @@
 
 const msciExUSA = [
 	{
+		date: 202209,
+		price: 1698.02
+	},{
+		date: 202208,
+		price: 1878.58
+	},{
 		date: 202207,
 		price: 1975.688
 	},{
@@ -1396,6 +1402,8 @@ const msciExUSA = [
 
 // msci All Country ex US Index
 // https://www.msci.com/end-of-day-data-search; World ex USA
+
+//  https://www.investing.com/indices/msci-world-ex-usa-historical-data
 
 
 module.exports = msciExUSA;
