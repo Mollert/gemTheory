@@ -17,6 +17,7 @@
     "chart.js": "^3.2.1",
     "express": "^4.17.1",
     "express-handlebars": "^5.3.2",
+    "minimatch": "^5.1.0",
     "minimist": "^1.2.5",
     "path": "^0.12.7",
     "request": "^2.88.0"
